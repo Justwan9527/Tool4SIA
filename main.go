@@ -325,7 +325,8 @@ func main() {
 	button4Data.Importance = widget.HighImportance
 	//button4Data.SetIcon(icon.LoadButtonIcon())
 
-	w.SetContent(container.NewVBox(typeBox, iputIpAndPort, siaDataCard, container.NewGridWithColumns(1, rspDatacard), layout.NewSpacer(), container.NewGridWithRows(1, layout.NewSpacer(), layout.NewSpacer(), button4Data)))
+	w.SetContent(container.NewVBox(typeBox, iputIpAndPort, siaDataCard, rspDatacard, layout.NewSpacer(), container.NewGridWithRows(1, layout.NewSpacer(), layout.NewSpacer(), layout.NewSpacer(), layout.NewSpacer(), layout.NewSpacer(), layout.NewSpacer(), button4Data)))
+	//w.SetContent(container.NewVBox(typeBox, iputIpAndPort, siaDataCard, container.NewGridWithColumns(1, rspDatacard), layout.NewSpacer(), container.NewGridWithRows(1, layout.NewSpacer(), layout.NewSpacer(), button4Data)))
 	//w.SetContent(container.NewVBox(typeBox, iputIpAndPort, siaDataCard, rspDatacard, container.NewGridWithRows(1, layout.NewSpacer(), layout.NewSpacer(), button4Data)))
 
 	w.SetIcon(icon.LoadWindowIcon())
